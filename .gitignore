@@ -1,0 +1,9 @@
+# Reports
+report.html
+test-results/
+
+# IDE settings
+.idea/
+
+# Pytest
+.pytest_cache/
