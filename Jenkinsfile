@@ -39,9 +39,6 @@ pipeline {
                     }
                 }
             }
-        }
-
-        stage('Publish HTML Report') {
             post {
                 always {
                     script {
