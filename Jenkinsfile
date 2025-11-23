@@ -4,7 +4,7 @@ pipeline {
     parameters {
         choice(
             name: 'BROWSER',
-            choices: ['all', 'chrome', 'firefox', 'edge'],
+            choices: ['all', 'chrome', 'firefox', 'webkit'],
             description: 'Select the browser to run tests on or "all" to run in parallel'
         )
     }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 bat 'python -m pip install --upgrade pip'
                 bat 'python -m pip install -r requirements.txt'
-                bat 'python -m playwright install chromium firefox edge'
+                bat 'playwright install'
             }
         }
 
