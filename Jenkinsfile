@@ -35,7 +35,7 @@ pipeline {
                             'Webkit Tests': { bat 'python -m pytest -n 3 --browser_name webkit --html=report_webkit.html --tracing on --reruns 2' }
                         )
                     } else {
-                        bat "python -m pytest -n 3 --browser_name ${params.BROWSER} --html=report.html --tracing on --reruns 2"
+                        bat "python -m pytest -n 3 --browser_name ${params.BROWSER} --html=report.html --self-contained-html --tracing on --reruns 2"
                     }
                 }
             }
