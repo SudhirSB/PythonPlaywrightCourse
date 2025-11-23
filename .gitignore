@@ -1,9 +1,21 @@
 # Reports
 report.html
 test-results/
+.playwright/
 
 # IDE settings
 .idea/
 
-# Pytest
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest cache
 .pytest_cache/
+
+# Playwright / project assets
+.assets/
+
+# Optional: virtual environment
+venv/

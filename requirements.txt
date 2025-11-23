@@ -1,0 +1,7 @@
+pytest
+playwright
+pytest-playwright
+pytest-bdd
+pytest-xdist
+pytest-html
+pytest-rerunfailures
