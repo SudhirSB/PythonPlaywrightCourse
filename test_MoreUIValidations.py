@@ -4,7 +4,7 @@ from playwright.sync_api import Page, expect, Playwright
 
 
 def test_additionalUIValidations(playwright:Playwright):
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch()
     context = browser.new_context(ignore_https_errors=True)
     page = context.new_page()
     page.goto("https://www.rahulshettyacademy.com/AutomationPractice/")

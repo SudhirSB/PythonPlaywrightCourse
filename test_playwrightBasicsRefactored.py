@@ -35,7 +35,7 @@ def test_invalid_login_using_firefox(playwright: Playwright):
     This demonstrates running the same flow on a manually launched browser and ensures
     the browser/context are always closed even if assertions fail.
     """
-    firefox_browser = playwright.firefox.launch(headless=False)
+    firefox_browser = playwright.firefox.launch()
     context = firefox_browser.new_context()
     page = context.new_page()
     try:

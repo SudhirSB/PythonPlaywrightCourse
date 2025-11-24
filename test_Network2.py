@@ -26,7 +26,7 @@ def test_session_storage(playwright: Playwright):
     token = api_utils.generate_token(playwright)
 
     # Launch browser and set session storage
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch()
     context = browser.new_context()
     page = context.new_page()
     page.add_init_script(f"""localStorage.setItem("token", "{token}");""")
